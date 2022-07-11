@@ -1,6 +1,6 @@
 // import { ProductProto } from "./Prototype.js";
-// import { ProductClass } from "./Class.js";
 // import { ClothingProto } from "./Prototype.js";
+// import { ProductClass } from "./Class.js";
 import { ClothingClass } from "./Class.js";
 
 import data from "../data.js";
@@ -22,10 +22,11 @@ function CardMaker(product) {
   text.classList.add("item-label");
   
   category.textContent = product.category;
-  category.classList.add("item-label");
+  category.classList.add("item-label-sm");
 
   card.appendChild(img);
   card.appendChild(text);
+  card.appendChild(category);
 
   return card;
 }
@@ -34,14 +35,18 @@ function CardMaker(product) {
 const classes = [];
 data.forEach((item) => {
   // const productProto = new ProductProto(item);
-  // const clothingProto = new ClothingProto(item);
   // const productClass = new ProductClass(item);
-  const clothingClass = new ClothingClass(item);
 
   // protos.push(productProto);
-  // protos.push(clothingProto);
   // classes.push(productClass);
-  classes.push(clothingClass);
+
+  if(item.category.includes('clothing')) {
+    // const clothingProto = new ClothingProto(item);
+    // protos.push(clothingProto);
+
+    const clothingClass = new ClothingClass(item);
+    classes.push(clothingClass);
+  }
 });
 
 // protos.forEach((item) => {

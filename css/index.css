@@ -157,6 +157,10 @@ nav .small-screen-nav i {
   margin: 1rem;
 }
 
+.item-label-sm {
+  font-size: .75rem;
+}
+
 .start {
     align-self: flex-start;
 }
