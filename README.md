@@ -1,4 +1,4 @@
-# web-code-along-dom-ecommerce-clone
+# web-code-along-dom-ecommerce-clone-instructor
 
 ## Setup
 1. [Project Walkthrough](https://bloomtech-1.wistia.com/medias/1iwm16iwkn)
