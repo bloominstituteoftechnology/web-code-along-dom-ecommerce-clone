@@ -1,7 +1,4 @@
-// import { ProductProto } from "./Prototype.js";
-// import { ClothingProto } from "./Prototype.js";
-// import { ProductClass } from "./Class.js";
-import { ClothingClass } from "./Class.js";
+import { ProductProto } from "./Prototype.js";
 
 import data from "../data.js";
 
@@ -31,30 +28,14 @@ function CardMaker(product) {
   return card;
 }
 
-// const protos = [];
-const classes = [];
+const protos = [];
 data.forEach((item) => {
-  // const productProto = new ProductProto(item);
-  // const productClass = new ProductClass(item);
+  const productProto = new ProductProto(item);
 
-  // protos.push(productProto);
-  // classes.push(productClass);
-
-  if(item.category.includes('clothing')) {
-    // const clothingProto = new ClothingProto(item);
-    // protos.push(clothingProto);
-
-    const clothingClass = new ClothingClass(item);
-    classes.push(clothingClass);
-  }
+  protos.push(productProto);
 });
 
-// protos.forEach((item) => {
-//   const card = CardMaker(item);
-//   list.append(card);
-// });
-
-classes.forEach((item) => {
+protos.forEach((item) => {
   const card = CardMaker(item);
   list.append(card);
 });
