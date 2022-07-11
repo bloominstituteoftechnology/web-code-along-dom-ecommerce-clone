@@ -1,17 +1,17 @@
-export class Product {
+export class ProductClass {
   constructor(props) {
-    this.name = props.name;
+    this.title = props.title;
     this.price = props.price;
     this.description = props.description;
     this.image = props.image;
   }
 
   checkStock() {
-    return `${this.name} is in stock.`;
+    return `${this.title} is in stock.`;
   };
 }
 
-export class Clothing extends Product {
+export class ClothingClass extends ProductClass {
   constructor(props) {
     super(props);
     this.category = props.category;
@@ -19,6 +19,6 @@ export class Clothing extends Product {
   }
 
   checkSizes() {
-    return `${this.name} in size ${this.size} is in stock.`;
+    return `${this.title} in size ${this.size} is in stock.`;
   };
 }
