@@ -1,4 +1,4 @@
-# Code-Along Project - Information and Setup
+# Code-Along Project - DOM eCommerce Clone - Information and Setup
 
 ## Setup
 1. Clone the project
