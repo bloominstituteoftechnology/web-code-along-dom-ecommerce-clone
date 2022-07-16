@@ -1,4 +1,4 @@
-# web-code-along-dom-ecommerce-clone-main
+# Code-Along Project - Information and Setup
 
 ## Setup
 1. Clone the project
