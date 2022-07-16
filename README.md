@@ -1,4 +1,4 @@
-# web-code-along-dom-ecommerce-clone-prototypes-and-classes-solution
+# Code-Along 2.2 - Prototypes and Classes - Solution
 
 ## Setup
 1. Clone the project
