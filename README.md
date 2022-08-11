@@ -1,4 +1,4 @@
-# Code-Along 2.2 - Prototypes and Classes - Starter# Code-Along Project - User Data Management App - Information and Setup
+# Code-Along 2.2 - Prototypes and Classes - Starter
 
 ## Make sure you DID NOT FORK -- You will not have access to all of the code required for each Code-Along! If you forked, simply delete this clone and re-clone from the BloomTech URL.
 
